@@ -1,0 +1,36 @@
+const songs = [
+	{ song_name: "Some Say - Felix Jaehn Remix", genre_id: 1, album_id: 1 },
+	{ song_name: "Nobody - Terrace Dub", genre_id: 2, album_id: 2 },
+	{ song_name: "Move All Night", genre_id: 1, album_id: 3 },
+	{ song_name: "You and Me", genre_id: 2, album_id: 4 },
+	{ song_name: "Rumors", genre_id: 1, album_id: 5 },
+	{ song_name: "Territory", genre_id: 2, album_id: 6 },
+	{ song_name: "Hold On", genre_id: 1, album_id: 7 },
+	{ song_name: "Arty Boy - Dom Dolla 'Party Boy' Remix", genre_id: 1, album_id: 8 },
+	{ song_name: "Sunflower - Radio Edit", genre_id: 1, album_id: 9 },
+	{ song_name: "Fill Me In - AFTR:HRS Mixcut", genre_id: 1, album_id: 10 },
+	{ song_name: "Pumpin‚Äô", genre_id: 2, album_id: 11 },
+	{ song_name: "Insane", genre_id: 1, album_id: 12 },
+	{ song_name: "My Level", genre_id: 2, album_id: 13 },
+	{ song_name: "Love (The Way You Get)", genre_id: 1, album_id: 14 },
+	{ song_name: "Keep Raving", genre_id: 1, album_id: 15 },
+	{ song_name: "Primal", genre_id: 2, album_id: 16 },
+	{ song_name: "Lights Down Low", genre_id: 1, album_id: 17 },
+	{ song_name: "One Mode - Extended Mix", genre_id: 1, album_id: 18 },
+	{ song_name: "What's Goin' On", genre_id: 1, album_id: 19 },
+	{ song_name: "Buss It", genre_id: 2, album_id: 20 },
+	{ song_name: "Donnie Yen", genre_id: 1, album_id: 21 },
+	{ song_name: "Dr Sbaitso", genre_id: 2, album_id: 22 },
+	{ song_name: "Cool", genre_id: 1, album_id: 23 },
+	{ song_name: "Bring it Back - Original Mix", genre_id: 1, album_id: 24 },
+	{ song_name: "New York City", genre_id: 2, album_id: 25 },
+	{ song_name: "This Feeling (feat. Julie McKnight) - Low Steppa Remix", genre_id: 1, album_id: 26 },
+	{ song_name: "Catch The Spirit", genre_id: 2, album_id: 27 },
+	{ song_name: "Douha (Mali Mali) (Edit)", genre_id: 1, album_id: 28 },
+	{ song_name: "So Hooked On Your Lovin - Gorgon City Remix", genre_id: 1, album_id: 29 },
+	{ song_name: "Love To The World", genre_id: 2, album_id: 30 },
+];
+
+exports.seed = function (knex) {
+	return knex("songs").insert(songs);
+};
