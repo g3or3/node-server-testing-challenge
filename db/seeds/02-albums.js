@@ -1,0 +1,36 @@
+const albums = [
+	{ album_name: "Some Say (Felix Jaehn Remix)" },
+	{ album_name: "Nobody (Terrace Dub)" },
+	{ album_name: "Move All Night" },
+	{ album_name: "Renaissance" },
+	{ album_name: "Rumors" },
+	{ album_name: "Territory" },
+	{ album_name: "Hold On" },
+	{ album_name: "Arty Boy (The Remixes II)" },
+	{ album_name: "Sunflower" },
+	{ album_name: "AFTR:HRS (Mixed By Ti√´sto)" },
+	{ album_name: "Pumpin‚Äô (Inc. Archie Hamilton Remix)" },
+	{ album_name: "Be At Home" },
+	{ album_name: "My Level" },
+	{ album_name: "Love (The Way You Get)" },
+	{ album_name: "Keep Raving" },
+	{ album_name: "Murky Manor" },
+	{ album_name: "The Majestic EP" },
+	{ album_name: "One Mode" },
+	{ album_name: "What's Goin' On" },
+	{ album_name: "Buss It" },
+	{ album_name: "Outlander EP" },
+	{ album_name: "Dr Sbaitso" },
+	{ album_name: "Cool" },
+	{ album_name: "Bring It Back EP" },
+	{ album_name: "We Call It House" },
+	{ album_name: "This Feeling (feat. Julie McKnight) [Remixes]" },
+	{ album_name: "Catch The Spirit EP" },
+	{ album_name: "Douha (Mali Mali)" },
+	{ album_name: "So Hooked On Your Lovin (Gorgon City Remix)" },
+	{ album_name: "Love To The World" },
+];
+
+exports.seed = function (knex) {
+	return knex("albums").insert(albums);
+};
